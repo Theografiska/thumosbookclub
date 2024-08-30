@@ -307,6 +307,10 @@ p span {
     .image-container img {
         max-height: 30rem;
     }
+    .image-container {
+        width: 100%;
+        flex: 2;
+    }
 }
 
 /* next events */
