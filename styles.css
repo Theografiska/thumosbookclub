@@ -88,6 +88,9 @@ button:hover {
     header {
         justify-content: center;
     }
+    .background-container h3 {
+        text-align: center;
+}
 }
 
 /* main */ 
@@ -127,9 +130,14 @@ main {
 .raison {
     display: flex; 
     justify-content: space-between;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    margin-bottom: 5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: nowrap;
+}
+
+.passages {
+    max-width: 50%;
 }
 
 main h2 {
@@ -162,7 +170,8 @@ p span {
 }
 
 .image-container {
-    min-width: 50%;
+    width: 50%;
+    flex: 2;
 }
 
 @media only screen and (min-width:200px) and (max-width:760px) {
@@ -187,13 +196,23 @@ p span {
         max-width: 100%;
         max-width: 400px;
     }
+    header {
+        height: 4rem;
+    }
+    .background-container {
+        margin: 4rem 1.5rem 4rem 1.5rem;
+    }
+    main {
+        top: 3rem;
+    }
 }
 
 .image-container img {
     border-radius: .5rem;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
     box-shadow: 0 8px 16px #a39989;
 }
 
@@ -220,6 +239,7 @@ p span {
     border-radius: 6px;
     padding: 0.5rem;
     max-width: 30%;
+    background-color: #f4ddb4;
 }
 
 .step p {
@@ -241,7 +261,7 @@ p span {
 .booklist {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-align: center;
 }
 .booklist h2 {
@@ -295,15 +315,11 @@ p span {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-top: 1.5rem;
-    text-align: start;
     margin-bottom: 3rem;
+    text-align: center;
 }
 .calendar h2 {
     margin-bottom: 1.5rem;
-}
-
-.events h3 {
-    font-size: 1rem;
 }
 
 .events h4 {
@@ -311,8 +327,18 @@ p span {
     color:#755526;
 }
 
-.calendar {
-    text-align: center;
+.eventsmain {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 200px) and (max-width:760px) {
+    .eventsmain {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }
 
 /* footer */
