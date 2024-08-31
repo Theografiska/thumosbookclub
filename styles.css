@@ -64,6 +64,7 @@ button {
     padding: 3px 6px;
     background-color: #755526;
     box-shadow: 0 4px 8px rgba(56, 48, 43, 0.744);
+    border: solid 1px black;
 }
 
 button a {
@@ -87,6 +88,7 @@ button:hover {
     }
     header {
         justify-content: center;
+        height: 4rem;
     }
     .background-container h3 {
         text-align: center;
@@ -183,27 +185,28 @@ p span {
     .background-container h1 {
         font-size: 2.5rem;
     }
+    .background-container h3 {
+        max-width: 100%;
+    }
     main h2 {
         font-size: 1.5rem;
         text-align: center;
     }
-    main h4 {
-        max-width: 400px;
-        min-width: 300px;
-    }
-    main p {
-        max-width: 100%;
-        max-width: 400px;
-        min-width: 300px;
-    }
-    header {
-        height: 4rem;
-    }
+   
     .background-container {
         margin: 4rem 1.5rem 4rem 1.5rem;
     }
     main {
         top: 3rem;
+    }
+    .passages {
+        display: block;
+        justify-items: center;
+        min-width: 300px;
+        max-width: 450px;
+    }
+    .passages p {
+        max-width: 100%;
     }
 }
 
@@ -350,7 +353,7 @@ p span {
 
 footer {
     background-color:#a39989;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
 }
 
 footer p {
