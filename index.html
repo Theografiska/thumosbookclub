@@ -15,10 +15,10 @@
 	    <h2><a href="#">Thumos<br>Book<br>Club</a></h2> 
         <nav>
             <ul>
-                <li><a href="#Why-do-this">Raison d'être</a></li>
-                <li><a href="#Operandi">Modus Operandi</a></li>
-                <li><a href="#Books">Book List</a></li>
-                <li><a href="#Timeline">Calendar</a></li>
+                <li><a class="anchor" href="#Why-do-this">Raison d'être</a></li> <!--put the "anchor" class here in order to fix the linking, but didn't get it to work through this.-->
+                <li><a class="anchor" href="#Operandi">Modus Operandi</a></li>
+                <li><a class="anchor" href="#Books">Book List</a></li>
+                <li><a class="anchor" href="#Timeline">Calendar</a></li>
                 <li><button><a href="#">JOIN</a></button></li>
             </ul>
         </nav>
@@ -38,7 +38,7 @@
         <!-- raison section-->
         <div class="raison">
             <div class="passages">
-                <h2 id="Why-do-this">Raison d'etre</h2>
+                <h2><span id="Why-do-this"></span>Raison d'etre</h2>
                 <h4>We are not your normal book club. We are not looking to discuss books for the sake of filling time. We only read for thumos*.</h4>
                 <p><span>Thumos</span> is the Ancient Greek concept of 'spiritedness', the force that fuels our passion, courage, and desire for a life of meaning and purpose. It is the spark that pushes us to seek out challenges, to grow, and to strive for greatness.</p>
                 <p>In the Thumos Book Club, we choose books that ignite this inner fire, that inspire us to think deeply, act boldly, and live fully.</p>
@@ -51,7 +51,7 @@
 
         <!-- modus section -->
         <div class="modus">
-            <h2 id="Operandi">Modus operandi </h2>
+            <h2><span id="Operandi"></span>Modus operandi</h2>
             <div class="howitworks">
                 <div class="step">
                     <h4>Fill in the application</h4>
@@ -68,7 +68,8 @@
         </div>
         <!-- book list -->
         <div class="booklist">
-            <h2 id="Books">Our Most Discussed Books</h2>
+            <h2><span id="Books"></span>Our Most Discussed Books</h2> <!--using id inside span to get the correct linking!-->
+
             <div class="booksection">
                 <!--book1-->
                 <div class="bookcontainer">
@@ -92,7 +93,7 @@
                         <a href="https://www.goodreads.com/book/show/629.Zen_and_the_Art_of_Motorcycle_Maintenance?ref=nav_sb_ss_1_19" target="_blank"><img src="Zen.webp"></a>
                     </div>
                     <h3>Robert Pirsig</h3>
-                    <h4>Zen and the Art of Motorcycle Maintenance</h4>
+                    <h4>Zen and the Art of <br>Motorcycle Maintenance</h4>
                 </div>
                 <!--book4-->
                 <div class="bookcontainer">
@@ -105,7 +106,7 @@
                 <!--book5-->
                 <div class="bookcontainer">
                     <div class="image-container">
-                        <a href="https://www.goodreads.com/book/show/790171.Kon_Tiki?ref=nav_sb_ss_1_8" target="_blank"><img src="TheKonTikiExpedition.jpg"></a>
+                        <a href="https://www.goodreads.com/book/show/790171.Kon_Tiki?ref=nav_sb_ss_1_8" target="_blank"><img src="kontiki3.jpg"></a>
                     </div>
                     <h3>Thor Heyerdahl</h3>
                     <h4>Kon-Tiki</h4>
@@ -122,18 +123,30 @@
         </div>
         <!-- next events -->
         <div class="calendar">
-            <h2 id="Timeline">Our next open events</h2>
+            <h2><span id="Timeline"></span>Our next open events</h2>
             <div class="eventsmain">
-            <div class="events">
-                <h4>September 16 – Bonfire @ Blue lake</h4>
+                <div class="event">
+                    <div class="image-container">
+                        <img src="bonfire3.avif">
+                    </div>
+                    <h4>September 16 – Bonfire @ Blue lake</h4>
+                    <button>RSVP</button>
+                 </div>
+                <div class="event">
+                    <div class="image-container">
+                        <img src="Cabin.avif">
+                    </div>
+                    <h4>October 10 – Oakwood Ridge cabin</h4>
+                    <button>RSVP</button>
+                </div>
+                <div class="event">
+                    <div class="image-container">
+                        <img src="mainstreet.avif">
+                    </div>
+                    <h4>November 22 – 4 Main Street, Springfield</h4>
+                    <button>RSVP</button>
+                </div>
             </div>
-            <div class="events">
-                <h4>October 10 – Oakwood Ridge cabin</h4>
-            </div>
-            <div class="events">
-                <h4>November 22 – 4 Main Street, Springfield</h4>
-            </div>
-        </div>
         </div>        
     
 	   <footer>
